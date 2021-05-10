@@ -1,0 +1,98 @@
+nodes:
+  - node: 1
+    name: "Airplane inspection"
+    type: control_flow
+    subtype: sequence
+    parent: 0
+
+  - node: 2
+    name: "Initial take off"
+    type: execution
+    subtype: task
+    task: TAKE_OFF
+    wait_for_completion: true
+    parent: 1
+
+  - node: 3
+    name: "Inspect right side Surface"
+    type: control_flow
+    subtype: sequence
+    parent: 1
+
+  - node: 4
+    name: “Place at correct height”
+    type: execution
+    subtype: task
+    task: FOLLOW_PATH
+    parameters: "path: [ [0, 0, 2.4] ]"
+    wait_for_completion: true
+    parent: 3
+
+  - node: 5
+    name: "Look at surface to inspect"
+    type: execution
+    subtype: task
+    task: ROTATE
+    parameters: "angle: 180"
+    wait_for_completion: true
+    parent: 3
+
+  - node: 6
+    name: “Inspect windows line”
+    type: execution
+    subtype: task
+    task: FOLLOW_PATH
+    parameters: "path: [ [0, 10, 2.4] ]"
+    wait_for_completion: true
+    parent: 3
+  
+  - node: 7
+    name: "Move to the next surface"
+    type: execution
+    subtype: task
+    task: FOLLOW_PATH
+    parameters: "path: [ [0, 10, 4] , [-5.2, 10, 4]]"
+    wait_for_completion: true
+    parent: 1
+
+  - node: 8
+    name: "Inspect left side surface"
+    type: control_flow
+    subtype: sequence
+    parent: 1
+
+  - node: 9
+    name: "Place at correct height"
+    type: execution
+    subtype: task
+    task: FOLLOW_PATH
+    parameters: "path: [[ -5.2,10,2]]"
+    wait_for_completion: true
+    parent: 8
+
+  - node: 10
+    name: "Look at surface to inspect"
+    type: execution
+    subtype: task
+    task: ROTATE
+    parameters: "relative_angle: -180"
+    wait_for_completion: false
+    parent: 8
+
+  - node: 11
+    name: "Explore windows line"
+    type: execution
+    subtype: task
+    task: FOLLOW_PATH
+    parameters: "path: [[ -5.2,0,2]]"
+    wait_for_completion: true
+    parent: 8
+
+  - node: 12
+    name: "Final landing"
+    type: execution
+    subtype: task
+    task: LAND
+    wait_for_completion: true
+    parent: 1
+
