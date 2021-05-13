@@ -2,7 +2,7 @@
 
 DRONE_SWARM_MEMBERS=$1
 MAV_NAME="hummingbird_adr"
-export AEROSTACK_PROJECT=${AEROSTACK_STACK}/projects/airplane_inspection_gazebo
+export APPLICATION_PATH=${PWD}
 
 if [ -z $DRONE_SWARM_MEMBERS ] # Check if DRONE_SWARM_MEMBERS is NULL
   then
@@ -15,7 +15,7 @@ fi
 
 gnome-terminal  \
    	--tab --title "airplane" --command "bash -c \"
-roslaunch ${AEROSTACK_PROJECT}/configs/gazebo_files/launch/AirbusA310.launch project:=${AEROSTACK_PROJECT};
+roslaunch ${APPLICATION_PATH}/configs/gazebo_files/launch/AirbusA310.launch project:=${APPLICATION_PATH};
 exec bash\""  &
 
 sleep 3

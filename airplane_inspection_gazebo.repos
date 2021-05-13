@@ -1,3 +1,5 @@
+repositories:
+
 #----------------------------------------------------------------------------
 # Messages
 #----------------------------------------------------------------------------
@@ -6,94 +8,6 @@
     url: https://github.com/aerostack/aerostack_msgs
     version: master
 
-#----------------------------------------------------------------------------
-# Deprecated libraries
-#----------------------------------------------------------------------------
-  deprecated/libraries/drone_process:
-    type: git 
-    url: https://github.com/aerostack/drone_process
-    version: master
-
-#----------------------------------------------------------------------------
-# Deprecated messages
-#----------------------------------------------------------------------------
-  deprecated/messages/dronemsgsros:
-    type: git 
-    url: https://github.com/aerostack/dronemsgsros
-    version: master
-
-#----------------------------------------------------------------------------
-# Deprecated libraries
-#----------------------------------------------------------------------------
-
-  deprecated/libraries/lib_pose:
-    type: git 
-    url: https://github.com/aerostack/lib_pose
-    version: master
-
-
-
-#----------------------------------------------------------------------------
-# Borrar?
-#----------------------------------------------------------------------------
-  deprecated/common/behavior_execution_controller:
-    type: git 
-    url: https://github.com/aerostack/behavior_execution_controller
-    version: master
-
-#----------------------------------------------------------------------------
-# Libraries
-#    ¿Quizá se pueden poner grupos de librerias en un sólo repo?
-#----------------------------------------------------------------------------
-  libraries/behaviorlib:
-    type: git 
-    url: https://github.com/cvar-upm/behaviorlib
-    version: master
-  libraries/robot_process:
-    type: git 
-    url: https://github.com/aerostack/robot_process
-    version: master
-  libraries/ros_utils_lib:
-    type: git 
-    url: https://bitbucket.org/visionaerialrobotics/ros_utils_lib
-    version: master
-  #----------------------------------------------------------------------------
-  # Agrupar estos dos en catkin?
-  #----------------------------------------------------------------------------
-  libraries/catkin_simple:
-    type: git
-    url: https://github.com/aerostack/catkin_simple
-    version: master
-  libraries/eigen_catkin:
-    type: git 
-    url: https://github.com/aerostack/eigen_catkin
-    version: master
-  #----------------------------------------------------------------------------
-  # Agrupar estos dos en cvglib?
-  #----------------------------------------------------------------------------
-  libraries/lib_cvgekf:
-    type: git 
-    url: https://github.com/aerostack/lib_cvgekf
-    version: master
-  libraries/lib_cvgutils:
-    type: git 
-    url: https://github.com/aerostack/lib_cvgutils
-    version: master
-
-#----------------------------------------------------------------------------
-# Simulation
-#----------------------------------------------------------------------------
-  simulation/quadrotor_gazebo_simulator:
-    type: git 
-    url: https://github.com/aerostack/quadrotor_gazebo_simulator
-    version: master
-#----------------------------------------------------------------------------
-# Hardware interface
-#----------------------------------------------------------------------------
-  hardware_interface/gazebo_interface:
-    type: git 
-    url: https://github.com/aerostack/gazebo_interface
-    version: master
 #----------------------------------------------------------------------------
 # Behaviors
 #----------------------------------------------------------------------------
@@ -105,13 +19,23 @@
     type: git 
     url: https://github.com/aerostack/quadrotor_motion_with_pid_control
     version: master
+  
 #----------------------------------------------------------------------------
-# User interface
+# Belief updaters
 #----------------------------------------------------------------------------
-  user_interface/alphanumeric_viewer:
+  belief_updaters/common_belief_updater:
     type: git 
-    url: https://github.com/aerostack/alphanumeric_viewer
+    url: https://github.com/aerostack/common_belief_updater
     version: master
+    
+#----------------------------------------------------------------------------
+# Mission control
+#----------------------------------------------------------------------------
+  mission_control/behavior_tree_interpreter:
+    type: git 
+    url: https://github.com/aerostack/behavior_tree_interpreter
+    version: master
+
 #----------------------------------------------------------------------------
 # Executive
 #----------------------------------------------------------------------------
@@ -119,38 +43,97 @@
     type: git 
     url: https://github.com/cvar-upm/coordinator_cbc
     version: master
-  #----------------------------------------------------------------------------
-  # Integrar el behavior_execution_viewer con lo anterior (crear un behavior coordination viewer)
-  #----------------------------------------------------------------------------
-  executive/behavior_execution_viewer:
-    type: git 
-    url: https://github.com/aerostack/behavior_execution_viewer
-    version: master
-  #----------------------------------------------------------------------------
-  # Integrar el belief_memory_viewer con lo anterior
-  #----------------------------------------------------------------------------
-
   executive/belief_manager:
     type: git
     url: https://github.com/aerostack/belief_manager
     version: master
+
 #----------------------------------------------------------------------------
-# Mission control
+# Simulation
 #----------------------------------------------------------------------------
-  mission_control/behavior_tree_editor:
+  simulation/quadrotor_gazebo_simulator:
     type: git 
-    url: https://github.com/aerostack/behavior_tree_editor
+    url: https://github.com/aerostack/quadrotor_gazebo_simulator
     version: master
-  mission_control/behavior_tree_interpreter:
+    
+#----------------------------------------------------------------------------
+# Hardware interface
+#----------------------------------------------------------------------------
+  hardware_interface/gazebo_interface:
     type: git 
-    url: https://github.com/aerostack/behavior_tree_interpreter
+    url: https://github.com/aerostack/gazebo_interface
     version: master
+  
 #----------------------------------------------------------------------------
-# Belief updaters
+# User interface
 #----------------------------------------------------------------------------
-  belief_updaters/common_belief_updater:
+  user_interface/alphanumeric_viewer:
     type: git 
-    url: https://github.com/aerostack/common_belief_updater
+    url: https://github.com/aerostack/alphanumeric_viewer
+    version: master
+  
+#----------------------------------------------------------------------------
+# Libraries
+#----------------------------------------------------------------------------
+  libraries/behaviorlib:
+    type: git 
+    url: https://github.com/cvar-upm/behaviorlib
+    version: master
+  libraries/robot_process:
+    type: git 
+    url: https://github.com/aerostack/robot_process
+    version: master
+  libraries/lib_cvgekf:
+    type: git 
+    url: https://github.com/aerostack/lib_cvgekf
+    version: master
+  libraries/lib_cvgutils:
+    type: git 
+    url: https://github.com/aerostack/lib_cvgutils
+    version: master
+  libraries/mav_comm:
+    type: git
+    url: https://github.com/aerostack/mav_comm
+    version: master
+  libraries/pugixml:
+    type: git 
+    url: https://github.com/aerostack/pugixml
+    version: master
+  libraries/ros_utils_lib:
+    type: git 
+    url: https://github.com/aerostack/ros_utils_lib
+    version: master    
+  libraries/catkin_simple:
+    type: git
+    url: https://github.com/aerostack/catkin_simple
+    version: master
+  libraries/eigen_catkin:
+    type: git 
+    url: https://github.com/aerostack/eigen_catkin
+    version: master
+
+#----------------------------------------------------------------------------
+# Deprecated
+#----------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------
+# Deprecated libraries
+#----------------------------------------------------------------------------
+  deprecated/libraries/drone_process:
+    type: git 
+    url: https://github.com/aerostack/drone_process
+    version: master
+  deprecated/libraries/lib_pose:
+    type: git 
+    url: https://github.com/aerostack/lib_pose
+    version: master
+  
+#----------------------------------------------------------------------------
+# Deprecated messages
+#----------------------------------------------------------------------------
+  deprecated/messages/dronemsgsros:
+    type: git 
+    url: https://github.com/aerostack/dronemsgsros
     version: master
 
 
