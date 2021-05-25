@@ -8,7 +8,7 @@ In order to execute the mission, perform the following steps:
 
 - Wait until the following window is presented:
 
-[[doc/AirplaneInspectionFirstImage.png]]
+<img src="https://github.com/aerostack/airplane_inspection_gazebo/blob/master/doc/AirplaneInspectionFirstImage.png" width=600>
 
 - Execute the script that launches the Aerostack components for this project:
 
