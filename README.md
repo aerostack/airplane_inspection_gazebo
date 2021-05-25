@@ -8,7 +8,7 @@ In order to execute the mission, perform the following steps:
 
 - Wait until the following window is presented:
 
-[[Files/AirplaneInspectionFirstImage.png]]
+[[doc/AirplaneInspectionFirstImage.png]]
 
 - Execute the script that launches the Aerostack components for this project:
 
