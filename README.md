@@ -17,7 +17,7 @@ In order to execute the mission, perform the following steps:
         $ ./main_launcher.sh
 
 As a result of this command, a set of windows are presented to monitor the execution of the mission. These windows include:
-- Behavior execution viewer
+- Alphanumeric behavior viewer
 - Belief viewers 
 - Image view of the front cameras
 
@@ -25,15 +25,15 @@ In order to start the execution of the mission, press the button "start mission"
 
 The following video illustrates how to launch the project:
 
-[ ![Launch](https://i.ibb.co/4SrqBPY/youtubepage1-800.png)](https://youtu.be/xETjawUBR2M)
+[ ![Launch](https://i9.ytimg.com/vi/sYY57W2C9sM/mq2.jpg?sqp=CPDWs4UG&rs=AOn4CLCF_U9Os50EKLl81zSLV7PVh8KvAQ)](https://www.youtube.com/watch?v=sYY57W2C9sM&feature=youtu.be)
 
 The following video shows the complete execution with the image of the front camera:
 
-[ ![Using camera](https://i.ibb.co/2d0JHgK/youtubepage2-800.png)](https://youtu.be/nVDlk8b8eyk)
+[ ![Using camera](https://i9.ytimg.com/vi/5pbNUQDA0c0/mq1.jpg?sqp=CPDWs4UG&rs=AOn4CLCK8vHfRidYQooG3lITywbAvi6mBA)](https://www.youtube.com/watch?v=5pbNUQDA0c0)
 
 The following video shows the content of belief memory viewer and behavior execution viewer during the mission execution:
   
-[ ![Airplane inspection gazebo](https://i.ibb.co/zhwk4jB/youtubepage3-800.png)](https://youtu.be/mPCTLPO-F_A)
+[ ![Airplane inspection gazebo](https://i9.ytimg.com/vi/habcF8IOCyE/mq1.jpg?sqp=CJCPtIUG&rs=AOn4CLARNXjyuo9Utfm74y0PpGTv4YyXyg)](https://www.youtube.com/watch?v=habcF8IOCyE)
 
 The following video shows the execution of the mission with subtitles while using teleoperation:
 
