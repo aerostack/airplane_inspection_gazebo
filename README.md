@@ -25,15 +25,15 @@ In order to start the execution of the mission, press the button "start mission"
 
 The following video illustrates how to launch the project:
 
-[ ![Launch](https://i9.ytimg.com/vi/sYY57W2C9sM/mq2.jpg?sqp=CPDWs4UG&rs=AOn4CLCF_U9Os50EKLl81zSLV7PVh8KvAQ)](https://www.youtube.com/watch?v=sYY57W2C9sM&feature=youtu.be)
+[ ![Launch](https://i.ibb.co/FgQPC0g/Captura-de-pantalla-de-2021-05-26-09-46-24.png)](https://www.youtube.com/watch?v=sYY57W2C9sM&feature=youtu.be)
 
 The following video shows the complete execution with the image of the front camera:
 
-[ ![Using camera](https://i9.ytimg.com/vi/5pbNUQDA0c0/mq1.jpg?sqp=CPDWs4UG&rs=AOn4CLCK8vHfRidYQooG3lITywbAvi6mBA)](https://www.youtube.com/watch?v=5pbNUQDA0c0)
+[ ![Using camera](https://i.ibb.co/4FGbw5K/Captura-de-pantalla-de-2021-05-26-09-48-59.png)](https://www.youtube.com/watch?v=5pbNUQDA0c0)
 
-The following video shows the content of belief memory viewer and behavior execution viewer during the mission execution:
+The following video shows the content of belief memory viewer and the alphanumeric behavior execution viewer during the mission execution:
   
-[ ![Airplane inspection gazebo](https://i9.ytimg.com/vi/habcF8IOCyE/mq1.jpg?sqp=CJCPtIUG&rs=AOn4CLARNXjyuo9Utfm74y0PpGTv4YyXyg)](https://www.youtube.com/watch?v=habcF8IOCyE)
+[ ![Airplane inspection gazebo](https://i.ibb.co/tbqhTm7/Captura-de-pantalla-de-2021-05-26-09-50-24.png)](https://www.youtube.com/watch?v=habcF8IOCyE)
 
 The following video shows the execution of the mission with subtitles while using teleoperation:
 
