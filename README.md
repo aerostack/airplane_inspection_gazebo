@@ -25,15 +25,15 @@ In order to start the execution of the mission, press the button "start mission"
 
 The following video illustrates how to launch the project:
 
-[ ![Launch](https://i.ibb.co/FgQPC0g/Captura-de-pantalla-de-2021-05-26-09-46-24.png)](https://www.youtube.com/watch?v=sYY57W2C9sM&feature=youtu.be)
+[ ![Launch](https://i.ibb.co/jh7j3Z7/ibb1.png)](https://youtu.be/sYY57W2C9sM)
 
 The following video shows the complete execution with the image of the front camera:
 
-[ ![Using camera](https://i.ibb.co/4FGbw5K/Captura-de-pantalla-de-2021-05-26-09-48-59.png)](https://www.youtube.com/watch?v=5pbNUQDA0c0)
+[ ![Using camera](https://i.ibb.co/wyBN1bS/ibb2.png)](https://youtu.be/XHyt1IYAgz4)
 
 The following video shows the content of belief memory viewer and the alphanumeric behavior execution viewer during the mission execution:
   
-[ ![Airplane inspection gazebo](https://i.ibb.co/tbqhTm7/Captura-de-pantalla-de-2021-05-26-09-50-24.png)](https://www.youtube.com/watch?v=habcF8IOCyE)
+[ ![Airplane inspection gazebo](https://i.ibb.co/k1xNtzt/ibb3.png)](https://youtu.be/5h8I0axevM4)
 
 The following video shows the execution of the mission with subtitles while using teleoperation:
 
