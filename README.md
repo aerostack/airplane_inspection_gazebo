@@ -38,3 +38,4 @@ The following video shows the content of belief memory viewer and the alphanumer
 The following video shows the execution of the mission with subtitles while using teleoperation:
 
 [ ![Airplane inspection gazebo with subtitles](https://i.ibb.co/DRQKPw2/capiavion2-800.png)](https://youtu.be/3l02MxyfGow)
+

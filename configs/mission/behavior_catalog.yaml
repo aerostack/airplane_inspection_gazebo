@@ -50,7 +50,7 @@ default_values:
   - execution_goal: achieve_goal
     start_on_request: TRUE
     reactive_start: FALSE
-    timeout: 15
+    timeout: 1000
 - behaviors:
   - suitability: 100
 
@@ -71,6 +71,33 @@ behaviors:
 - behavior: SELF_LOCALIZE_WITH_GROUND_TRUTH
   package: basic_quadrotor_behaviors
   task: SELF_LOCALIZE
+#------------------------------------------------------
+- behavior: TAKE_OFF_WITH_DF
+  package: quadrotor_motion_with_df_control
+  task: TAKE_OFF
+  requires:
+  - task: QUADROTOR_DF_MOTION_CONTROL
+
+- behavior: LAND_WITH_DF
+  package: quadrotor_motion_with_df_control
+  task: LAND
+  requires:
+  - task: QUADROTOR_DF_MOTION_CONTROL
+
+- behavior: FOLLOW_PATH_WITH_DF
+  package: quadrotor_motion_with_df_control
+  task: FOLLOW_PATH
+  requires:
+  - task: QUADROTOR_DF_MOTION_CONTROL
+  - task: SEND_PATH
+
+- behavior: QUADROTOR_DF_MOTION_CONTROL
+  package: quadrotor_motion_with_df_control
+  task: QUADROTOR_DF_MOTION_CONTROL
+
+- behavior: SEND_PATH
+  package: quadrotor_motion_with_df_control
+  task: SEND_PATH
 #------------------------------------------------------
 - behavior: TAKE_OFF_WITH_PID
   package: quadrotor_motion_with_pid_control
@@ -168,6 +195,18 @@ tasks:
   start_on_request: FALSE
   execution_goal: keep_running
 
+- task: QUADROTOR_DF_MOTION_CONTROL
+  start_on_request: FALSE
+  execution_goal: keep_running
+
+- task: TAKE_OFF
+
+- task: LAND
+
+- task: FOLLOW_PATH
+
+- task: SEND_PATH
+  start_on_request: FALSE
 #------------------------------------------------------
 exclusivity_constraints:
 
@@ -178,3 +217,6 @@ exclusivity_constraints:
   - FOLLOW_PATH
   - MOVE_AT_SPEED
   - ROTATE
+- mutually_exclusive:
+  - QUADROTOR_DF_MOTION_CONTROL
+  - PID_MOTION_CONTROL
