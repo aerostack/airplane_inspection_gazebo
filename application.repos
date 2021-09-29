@@ -23,7 +23,15 @@ repositories:
     type: git
     url: https://github.com/aerostack/quadrotor_motion_with_pid_control
     version: v5-libeccio
-    
+
+#----------------------------------------------------------------------------
+# Belief updaters
+#----------------------------------------------------------------------------
+  belief_updaters/common_belief_updater:
+    type: git 
+    url: https://github.com/aerostack/common_belief_updater
+    version: v5-libeccio
+
 #----------------------------------------------------------------------------
 # Mission control
 #----------------------------------------------------------------------------
@@ -34,7 +42,7 @@ repositories:
   mission_control/behavior_tree_interpreter:
     type: git 
     url: https://github.com/aerostack/behavior_tree_interpreter
-    version: master
+    version: v5-libeccio
 
 #----------------------------------------------------------------------------
 # Executive
