@@ -33,8 +33,7 @@ The following video shows the complete execution with the image of the front cam
 
 The following video shows the content of belief memory viewer and the alphanumeric behavior execution viewer during the mission execution:
   
-[ ![Airplane inspection gazebo](https://i.ibb.co/k1xNtzt/ibb3.png)](https://youtu.be/5h8I0axevM4)
-
+[ ![Airplane inspection gazebo](https://raw.githubusercontent.com/aerostack/airplane_inspection_gazebo/v5-libeccio/doc/airplane-execution-miniature.png)](https://www.youtube.com/watch?v=1wzX-PtO7rg)
 The following video shows the execution of the mission with subtitles while using teleoperation:
 
 [ ![Airplane inspection gazebo with subtitles](https://i.ibb.co/DRQKPw2/capiavion2-800.png)](https://youtu.be/3l02MxyfGow)
