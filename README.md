@@ -10,7 +10,7 @@ In order to execute the mission, perform the following steps:
 
 - Wait until the following window is presented:
 
-<img src="https://github.com/aerostack/airplane_inspection_gazebo/blob/master/doc/AirplaneInspectionFirstImage.png" width=600>
+<img src="https://raw.githubusercontent.com/aerostack/airplane_inspection_gazebo/v5-libeccio/doc/GazeboIsReady.png" width=600>
 
 - Execute the script that launches the Aerostack components for this project:
 
@@ -25,11 +25,11 @@ In order to start the execution of the mission, press the button "start mission"
 
 The following video illustrates how to launch the project:
 
-[ ![Launch](https://i.ibb.co/jh7j3Z7/ibb1.png)](https://youtu.be/sYY57W2C9sM)
+[![How To Launch](https://raw.githubusercontent.com/aerostack/airplane_inspection_gazebo/v5-libeccio/doc/HowToLaunch.png)](https://youtu.be/OPGyt3YJW8s)
 
 The following video shows the complete execution with the image of the front camera:
 
-[ ![Using camera](https://i.ibb.co/wyBN1bS/ibb2.png)](https://youtu.be/XHyt1IYAgz4)
+[![Execution with Front Camera](https://raw.githubusercontent.com/aerostack/airplane_inspection_gazebo/v5-libeccio/doc/ExecutionWithFrontCamera.png)](https://youtu.be/ANI2XvHkpyg)
 
 The following video shows the content of belief memory viewer and the alphanumeric behavior execution viewer during the mission execution:
   
