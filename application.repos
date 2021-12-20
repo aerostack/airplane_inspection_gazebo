@@ -50,7 +50,7 @@ repositories:
   executive/coordinator_cbc:
     type: git 
     url: https://github.com/cvar-upm/coordinator_cbc
-    version: v5-libeccio
+    version: v1.0
   executive/belief_manager:
     type: git
     url: https://github.com/aerostack/belief_manager
@@ -90,7 +90,7 @@ repositories:
   libraries/behaviorlib:
     type: git 
     url: https://github.com/cvar-upm/behaviorlib
-    version: v5-libeccio
+    version: v1.0
   libraries/robot_process:
     type: git 
     url: https://github.com/aerostack/robot_process
